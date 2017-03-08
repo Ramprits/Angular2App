@@ -1,6 +1,21 @@
-<p>
+<p class="well">
   EmployeeDetail works!
 </p>
 
-Employee Id : {{employee.EmployeeId}}<br> 
-Last Name : {{employee.LastName}}
+<strong>Employee Id:</strong>{{employee.Id}}<br>
+<strong>Last Name :</strong> {{employee.LastName}}<br>
+<strong>First Name :</strong>{{employee.FirstName}}<br>
+
+<strong>Title Of Courtesy</strong> {{employee.TitleOfCourtesy}}<br>
+<strong>Birth Date</strong>{{employee.BirthDate}}<br>
+<strong>HireDate</strong>{{employee.HireDate}}<br>
+<strong>Address</strong>{{employee.Address}}<br>
+<strong>City</strong>{{employee.City}}<br>
+<strong>Region</strong>{{employee.Region<br>
+<strong>Postal Code</strong>}}{{employee.PostalCode}}<br>
+<strong>Country</strong>{{employee.Country}}<br>
+<strong>Home Phone</strong> {{employee.HomePhone}}<br>
+<strong>Extension</strong>{{employee.Extension}}<br>
+<strong>Notes</strong><p class="text-capitalised text-primary">{{employee.Notes}}</p>
+
+<a class="btn btn-primary btn-sm" [routerLink]="['/Employees']">Back To home</a>

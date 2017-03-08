@@ -9,18 +9,23 @@ import { EmployeeComponent } from './Employee/Employee.component';
 import { EmployeeService } from './Employee/Employee.service'
 import { EmployeeDetailComponent } from './Employee/EmployeeDetail/EmployeeDetail.component'
 import { RouterModule } from "@angular/router";
-import { routes } from './appRoute.routing'
+import { AppRoute } from './appRoute.routing'
+import { WelComeComponent } from './WelCome/WelCome.component';
+import { ContactComponent } from './Contact/Contact.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationsComponent,
-    EmployeeComponent
-  ],
+    EmployeeComponent,
+    EmployeeDetailComponent,
+    WelComeComponent,
+    ContactComponent
+],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(AppRoute),
     FormsModule,
-    HttpModule,
-    RouterModule.forRoot(routes)
+    HttpModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

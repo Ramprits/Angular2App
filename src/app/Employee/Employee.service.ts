@@ -9,13 +9,13 @@ export class EmployeeService {
     return Employees;
   }
   GetEmployee(Id: number) {
-    return Employees.find(e => e.EmployeeID === Id);
+    return Employees.find(e => e.Id === Id)
   }
 }
 
 const Employees = [
   {
-    "EmployeeID": 1,
+    "Id": 1,
     "LastName": "Davolio",
     "FirstName": "Nancy",
     "Title": "Sales Representative",
@@ -35,7 +35,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/davolio.bmp"
   },
   {
-    "EmployeeID": 2,
+    "Id": 2,
     "LastName": "Fuller",
     "FirstName": "Andrew",
     "Title": "Vice President, Sales",
@@ -55,7 +55,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/fuller.bmp"
   },
   {
-    "EmployeeID": 3,
+    "Id": 3,
     "LastName": "Leverling",
     "FirstName": "Janet",
     "Title": "Sales Representative",
@@ -75,7 +75,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/leverling.bmp"
   },
   {
-    "EmployeeID": 4,
+    "Id": 4,
     "LastName": "Peacock",
     "FirstName": "Margaret",
     "Title": "Sales Representative",
@@ -95,7 +95,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/peacock.bmp"
   },
   {
-    "EmployeeID": 5,
+    "Id": 5,
     "LastName": "Buchanan",
     "FirstName": "Steven",
     "Title": "Sales Manager",
@@ -115,7 +115,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/buchanan.bmp"
   },
   {
-    "EmployeeID": "6",
+    "Id": "6",
     "LastName": "Suyama",
     "FirstName": "Michael",
     "Title": "Sales Representative",
@@ -135,7 +135,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/davolio.bmp"
   },
   {
-    "EmployeeID": "7",
+    "Id": "7",
     "LastName": "King",
     "FirstName": "Robert",
     "Title": "Sales Representative",
@@ -155,7 +155,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/davolio.bmp"
   },
   {
-    "EmployeeID": "8",
+    "Id": "8",
     "LastName": "Callahan",
     "FirstName": "Laura",
     "Title": "Inside Sales Coordinator",
@@ -175,7 +175,7 @@ const Employees = [
     "PhotoPath": "http://accweb/emmployees/davolio.bmp"
   },
   {
-    "EmployeeID": "9",
+    "Id": "9",
     "LastName": "Dodsworth",
     "FirstName": "Anne",
     "Title": "Sales Representative",

@@ -5,14 +5,16 @@
         <h4 class="card-title" style="color: green">Employee Details</h4>
         <div>
           <hr>
-          <p class="card-text">
-            <label for="employees.FirstName"> First Name :</label> {{employee.FirstName}}
-            <label for="employees.LastName"> Last Name :</label> {{employee.LastName}}<br>
-            <label for="employees.Title"> Title :</label> {{employee.Title}}<br>
-            <label for="employees.TitleOfCourtesy"> Title Of Courtesy :</label> {{employee.TitleOfCourtesy}}<br>
-            <label for="employees.BirthDate"> Birth Date :</label> {{employee.BirthDate}}<br>
-            <label for="employees.HireDate"> Hire Date :</label> {{employee.HireDate}}<br>
-            <label> Online URL :</label> {{employee.OnlineURL}}<br>
+          <strong> Employee Id:  
+          <a [routerLink]="['/Employees',employee.Id]">{{employee.Id}}</a></strong><br>
+          <label for="employees.FirstName"> First Name :</label> {{employee.FirstName}}
+          <label for="employees.LastName"> Last Name :</label> {{employee.LastName}}<br>
+          <label for="employees.Title"> Title :</label> {{employee.Title}}<br>
+          <label for="employees.TitleOfCourtesy"> Title Of Courtesy :</label> {{employee.TitleOfCourtesy}}<br>
+          <label for="employees.BirthDate"> Birth Date :</label> {{employee.BirthDate}}<br>
+          <label for="employees.HireDate"> Hire Date :</label> {{employee.HireDate}}<br>
+          <label> Online URL :</label> {{employee.OnlineURL}}<br>
+
         </div>
       </div>
     </div>

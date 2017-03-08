@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from './Employee.service'
 
 @Component({
-  selector: 'app-Employee',
   templateUrl: './Employee.component.html',
   styleUrls: ['./Employee.component.css']
 })

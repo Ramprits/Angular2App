@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import{EmployeeService} from '../Employee.service'
+
 @Component({
-  selector: 'app-EmployeeDetail',
   templateUrl: './EmployeeDetail.component.html',
   styleUrls: ['./EmployeeDetail.component.css']
 })
@@ -13,7 +12,7 @@ export class EmployeeDetailComponent implements OnInit {
 
   }
   ngOnInit() {
-    this.employee = this.employeeService.GetEmployee(5);
+    this.employee = this.employeeService.GetEmployee(2);
   }
 
 }
