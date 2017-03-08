@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavigationsComponent } from './Navigations/Navigations.component';
+import{NewEmployeeComponent} from './Employee/NewEmployee/NewEmployee.component'
 import { EmployeeComponent } from './Employee/Employee.component';
 import { EmployeeService } from './Employee/Employee.service'
 import { EmployeeDetailComponent } from './Employee/EmployeeDetail/EmployeeDetail.component'
@@ -19,7 +20,8 @@ import { ContactComponent } from './Contact/Contact.component';
     EmployeeComponent,
     EmployeeDetailComponent,
     WelComeComponent,
-    ContactComponent
+    ContactComponent,
+    NewEmployeeComponent
 ],
   imports: [
     BrowserModule,
