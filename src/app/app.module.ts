@@ -6,14 +6,18 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavigationsComponent } from './Navigations/Navigations.component';
 import { NewEmployeeComponent } from './Employee/NewEmployee/NewEmployee.component'
-import { EmployeeComponent } from './Employee/Employee.component';
-import { EmployeeService } from './Employee/Employee.service'
-import { EmployeeDetailComponent } from './Employee/EmployeeDetail/EmployeeDetail.component'
+
+import {
+  EmployeeService,
+  EmployeeComponent,
+  ToasterService,
+  EmployeeDetailComponent
+} from './Employee/index'
+
 import { RouterModule } from "@angular/router";
 import { AppRoute } from './appRoute.routing'
 import { WelComeComponent } from './WelCome/WelCome.component';
 import { ContactComponent } from './Contact/Contact.component';
-import { ToasterService } from './Employee/Toaster.service';
 import { ErrorComponent } from './error/error.component';
 @NgModule({
   declarations: [
