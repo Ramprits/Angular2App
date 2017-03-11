@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import{EmployeeService} from '../Employee.service'
+import { EmployeeService } from '../Employee.service'
+import { IEmployee } from "../Employee.model";
 
 @Component({
   templateUrl: './EmployeeDetail.component.html',
@@ -7,12 +8,12 @@ import{EmployeeService} from '../Employee.service'
 })
 export class EmployeeDetailComponent implements OnInit {
 
-  employee: any
+  employee: IEmployee
   constructor(private employeeService: EmployeeService) {
 
   }
   ngOnInit() {
-    this.employee = this.employeeService.GetEmployee(2);
+    this.employee = this.employeeService.GetEmployee(4);
   }
 
 }
