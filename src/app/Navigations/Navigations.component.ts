@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-Navigations',
   templateUrl: './Navigations.component.html',
-  styleUrls: ['./Navigations.component.css']
+  styles: [`li>a.activeLink{color:green}`]
 })
 export class NavigationsComponent implements OnInit {
 

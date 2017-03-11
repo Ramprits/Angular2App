@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs/RX';
 
 @Injectable()
 export class EmployeeService {
@@ -6,7 +7,9 @@ export class EmployeeService {
   constructor() { }
 
   GetEmployees() {
-    return Employees;
+    let subject = new Subject()
+    setTimeout(() => { subject.next(Employees), subject.complete() }, 2000)
+    return subject;
   }
   GetEmployee(Id: number) {
     return Employees.find(e => e.Id === Id)

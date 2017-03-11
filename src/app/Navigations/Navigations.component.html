@@ -8,19 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" style="color: White" [routerLink]="['/Employees']">All Employees <span class="sr-only">(current)</span></a>
+        <a class="nav-link" style="color: White" [routerLink]="['/Employees']" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">All Employees <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" style="color: White" [routerLink]="['/Employees/New']">New Employees <span class="sr-only">(current)</span></a>
+        <a class="nav-link" style="color: White" [routerLink]="['/Employees/New']" routerLinkActive="activeLink">New Employees <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: White">All Customers</a>
+        <a class="nav-link" style="color: White" routerLinkActive="activeLink">All Customers</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: White" href="#">Clients</a>
+        <a class="nav-link" style="color: White" href="#" routerLinkActive="activeLink">Clients</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" style="color: White" [routerLink]="['/Contact']">Contact</a>
+        <a class="nav-link" style="color: White" [routerLink]="['/Contact']" routerLinkActive="activeLink">Contact</a>
       </li>
     </ul>
 

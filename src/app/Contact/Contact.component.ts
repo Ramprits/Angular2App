@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   constructor() { }
-
+SaveContact()
+{
+  alert ('Hello I recieve your data !')
+}
   ngOnInit() {
   }
 
