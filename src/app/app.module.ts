@@ -8,12 +8,20 @@ import { NavigationsComponent } from './Navigations/Navigations.component';
 import { NewEmployeeComponent } from './Employee/NewEmployee/NewEmployee.component'
 
 import {
+  ProductComponent,
+  ProductService
+
+} from './Product/index';
+import {
   EmployeeService,
   EmployeeComponent,
   ToasterService,
   EmployeeDetailComponent
 } from './Employee/index'
-
+import {
+  SupplierComponent,
+  SupplierService
+} from './Supplier/index'
 import { RouterModule } from "@angular/router";
 import { AppRoute } from './appRoute.routing'
 import { WelComeComponent } from './WelCome/WelCome.component';
@@ -28,7 +36,9 @@ import { ErrorComponent } from './error/error.component';
     WelComeComponent,
     ContactComponent,
     NewEmployeeComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductComponent,
+    SupplierComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +46,10 @@ import { ErrorComponent } from './error/error.component';
     FormsModule,
     HttpModule
   ],
-  providers: [EmployeeService, ToasterService],
+  providers: [EmployeeService,
+    ToasterService,
+    ProductService,
+    SupplierService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

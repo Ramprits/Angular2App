@@ -1,21 +1,19 @@
 <p class="well">
-  EmployeeDetail works!
+
 </p>
 
-<strong>Employee Id:</strong>{{employee.Id}}<br>
-<strong>Last Name :</strong> {{employee.LastName}}<br>
-<strong>First Name :</strong>{{employee.FirstName}}<br>
-
-<strong>Title Of Courtesy</strong> {{employee.TitleOfCourtesy}}<br>
-<strong>Birth Date</strong>{{employee.BirthDate}}<br>
-<strong>HireDate</strong>{{employee.HireDate}}<br>
-<strong>Address</strong>{{employee.Address}}<br>
-<strong>City</strong>{{employee.City}}<br>
-<strong>Region</strong>{{employee.Region<br>
-<strong>Postal Code</strong>}}{{employee.PostalCode}}<br>
-<strong>Country</strong>{{employee.Country}}<br>
-<strong>Home Phone</strong> {{employee.HomePhone}}<br>
-<strong>Extension</strong>{{employee.Extension}}<br>
-<strong>Notes</strong><p class="text-capitalised text-primary">{{employee.Notes}}</p>
-
-<a class="btn btn-primary btn-sm" [routerLink]="['/Employees']">Back To home</a>
+<div class="card">
+  <div class="card-header">
+    Employee Detail !
+  </div>
+  <div class="card-block">
+    <strong>Employee Id:</strong> <span> {{employee.Id}}</span><br>
+    <strong>Last Name :</strong> <span>{{employee.LastName}}</span><br>
+    <strong>First Name :</strong> <span>{{employee.FirstName}}</span><br>
+    <strong>Birth Date :</strong> <span>{{employee.BirthDate|date}}</span><br>
+    <strong>HireDate :</strong> <span>{{employee.HireDate|date}}</span><br>
+  </div>
+  <div class="card-footer text-muted">
+    <a class="btn btn-primary btn-sm" [routerLink]="['/Employees']"> <i class="fa fa-home" aria-hidden="true"></i> Back To Home</a>
+  </div>
+</div>

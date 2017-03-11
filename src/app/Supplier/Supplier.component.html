@@ -1,0 +1,34 @@
+<div style="width: 52%;">
+  <table class="table table-Responsive table-bordered table-sm">
+    <thead class="bg-info">
+      <tr>
+        <td>Supplier ID</td>
+        <td>Company Name</td>
+        <td>Contact Name</td>
+        <td>Contact Title</td>
+        <td>Address</td>
+        <td>City</td>
+        <td>Region</td>
+        <td>Postal Code</td>
+        <td>Country</td>
+        <td>Phone</td>
+        <td>Fax</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let supplier of Suppliers">
+        <td>{{supplier.SupplierID}}</td>
+        <td>{{supplier.CompanyName}}</td>
+        <td>{{supplier.ContactName}}</td>
+        <td>{{supplier.ContactTitle}}</td>
+        <td>{{supplier.Address}}</td>
+        <td>{{supplier.City}}</td>
+        <td>{{supplier.Region}}</td>
+        <td>{{supplier.PostalCode}}</td>
+        <td>{{supplier.Country}}</td>
+        <td>{{supplier.Phone}}</td>
+        <td>{{supplier.Fax}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,34 @@
+<br>
+<div *ngIf="Loading" > 
+  <i class="fa fa-spinner" aria-hidden="true">
+    </i></div>
+<table class="table table-Responsive table-bordered">
+  <thead class="bg-info">
+    <tr>
+      <td>Product ID</td>
+      <td>Product Name</td>
+      <td>Supplier ID</td>
+      <td>Category ID</td>
+      <td>Quantity Per Unit</td>
+      <td>UnitPrice</td>
+      <td>Units In Stock</td>
+      <td>Units On Order</td>
+      <td>Re-order Level</td>
+      <td>Discontinued</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of Products">
+      <td>{{product.ProductID}}</td>
+      <td>{{product.ProductName}}</td>
+      <td>{{product.SupplierID}}</td>
+      <td>{{product.CategoryID}}</td>
+      <td>{{product.QuantityPerUnit}}</td>
+      <td>{{product.UnitPrice}}</td>
+      <td>{{product.UnitsInStock}}</td>
+      <td>{{product.UnitsOnOrder}}</td>
+      <td>{{product.ReorderLevel}}</td>
+      <td>{{product.Discontinued}}</td>
+    </tr>
+  </tbody>
+</table>
