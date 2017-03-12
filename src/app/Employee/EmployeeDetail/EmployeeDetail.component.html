@@ -1,19 +1,19 @@
-<p class="well">
+<div class="well">
 
-</p>
-
-<div class="card">
-  <div class="card-header">
-    Employee Detail !
-  </div>
-  <div class="card-block">
-    <strong>Employee Id:</strong> <span> {{employee.Id}}</span><br>
-    <strong>Last Name :</strong> <span>{{employee.LastName}}</span><br>
-    <strong>First Name :</strong> <span>{{employee.FirstName}}</span><br>
-    <strong>Birth Date :</strong> <span>{{employee.BirthDate|date}}</span><br>
-    <strong>HireDate :</strong> <span>{{employee.HireDate|date}}</span><br>
-  </div>
-  <div class="card-footer text-muted">
-    <a class="btn btn-primary btn-sm" [routerLink]="['/Employees']"> <i class="fa fa-home" aria-hidden="true"></i> Back To Home</a>
+  <div class="card">
+    <div class="card-header">
+      Employee Detail !
+    </div>
+    <div class="card-block">
+      <strong>Employee Id:</strong> <span> {{employee.Id}}</span><br>
+      <strong>Last Name :</strong> <span>{{employee.LastName}}</span><br>
+      <strong>First Name :</strong> <span>{{employee.FirstName}}</span><br>
+      <strong>Birth Date :</strong> <span>{{employee.BirthDate|date}}</span><br>
+      <strong>HireDate :</strong> <span>{{employee.HireDate|date}}</span><br>
+    </div>
+    <div class="card-footer text-muted">
+      <a class="btn btn-primary btn-sm" [routerLink]="['/Employees']">
+        <i class="fa fa-home" aria-hidden="true"></i> Back To Home</a>
+    </div>
   </div>
 </div>
