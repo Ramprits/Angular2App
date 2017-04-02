@@ -27,6 +27,11 @@ import { AppRoute } from './appRoute.routing'
 import { WelComeComponent } from './WelCome/WelCome.component';
 import { ContactComponent } from './Contact/Contact.component';
 import { ErrorComponent } from './error/error.component';
+import { OrderListComponent } from "./orderList/orderList.component";
+import { OrderService } from "./orderList/order.service";
+import { EmployeeListService } from "./employeeList/employee.service";
+import { EmployeeListComponent } from "./employeeList/employee.component";
+import { EmployeeListDetailComponent } from "./employeeList/EmployeeListDetailComponent";
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +43,10 @@ import { ErrorComponent } from './error/error.component';
     NewEmployeeComponent,
     ErrorComponent,
     ProductComponent,
-    SupplierComponent
+    SupplierComponent,
+    OrderListComponent,
+    EmployeeListComponent,
+    EmployeeListDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,7 @@ import { ErrorComponent } from './error/error.component';
     FormsModule,
     HttpModule
   ],
-  providers: [EmployeeService,
+  providers: [EmployeeService, OrderService,EmployeeListService,
     ToasterService,
     ProductService,
     SupplierService],

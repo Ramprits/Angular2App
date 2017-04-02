@@ -1,31 +1,41 @@
 <nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" style="color: White" [routerLink]="['/Welcome']">RadFord Global LTD</a>
+    <a class="navbar-brand" style="color: White" [routerLink]="['/Welcome']">RadFord Global LTD</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" style="color: White" [routerLink]="['/Employees']" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">All Employees <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" style="color: White" [routerLink]="['/Employees/New']" routerLinkActive="activeLink">New Employees <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: White" routerLinkActive="activeLink">All Customers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: White" [routerLink]="['/Products']" routerLinkActive="activeLink">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: White" [routerLink]="['/Contact']" routerLinkActive="activeLink">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: White" [routerLink]="['/Suppliers']" routerLinkActive="activeLink">Suppliers</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" style="color: White" [routerLink]="['/Employees']" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">All Employees <span class="sr-only">(current)</span></a>
+            </li>
 
-  </div>
+            <li class="nav-item">
+                <a class="nav-link" style="color: White" [routerLink]="['/Products']" routerLinkActive="activeLink">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: White" [routerLink]="['/Orders']" routerLinkActive="activeLink">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: White" [routerLink]="['/Suppliers']" routerLinkActive="activeLink">Suppliers</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color: White" [routerLink]="['/EmployeeList']" routerLinkActive="activeLink">EmployeeList</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: White" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+          Dropdown link
+        </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" [routerLink]="['/user/login']">Login</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
 </nav>
