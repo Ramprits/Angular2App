@@ -1,41 +1,62 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-primary">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <a class="navbar-brand" style="color: White" [routerLink]="['/Welcome']">RadFord Global LTD</a>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample"
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/Welcome']">DNI Fruits Mart</a>
+        <div class="collapse navbar-collapse" id="navbarExample">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Employees']" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">All Employees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Products']" routerLinkActive="activeLink">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Orders']" routerLinkActive="activeLink">Orders</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolio
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        <a class="dropdown-item" [routerLink]="['/Suppliers']" routerLinkActive="activeLink">Suppliers</a>
+                        <a class="dropdown-item" [routerLink]="['/EmployeeList']" routerLinkActive="activeLink">EmployeeList</a>
+                        <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+                        <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+                        <a *ngIf="!auth.isAuthenticated()" style="color: White" [routerLink]="['/user/login']">Login</a>
+                        <a *ngIf="auth.isAuthenticated()" style="color: White" [routerLink]="['/user/profile']">Welcome {{auth.currentUser.firstName}}</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                        <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+                        <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+                        <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Other Pages
+                        </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                        <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+                        <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                        <a class="dropdown-item" href="404.html">404</a>
+                        <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+                        <a class="dropdown-item" *ngIf="!auth.isAuthenticated()" [routerLink]="['/user/login']">Login</a>
+                        <a class="dropdown-item" *ngIf="auth.isAuthenticated()" [routerLink]="['/user/profile']">Welcome {{auth.currentUser.firstName}}</a>
+                    </div>
+                </li>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" style="color: White" [routerLink]="['/Employees']" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact:true}">All Employees <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" style="color: White" [routerLink]="['/Products']" routerLinkActive="activeLink">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: White" [routerLink]="['/Orders']" routerLinkActive="activeLink">Orders</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" style="color: White" [routerLink]="['/Suppliers']" routerLinkActive="activeLink">Suppliers</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" style="color: White" [routerLink]="['/EmployeeList']" routerLinkActive="activeLink">EmployeeList</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: White" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-          Dropdown link
-        </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" [routerLink]="['/user/login']">Login</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-
+            </ul>
+        </div>
     </div>
 </nav>

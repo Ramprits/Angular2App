@@ -15,3 +15,11 @@ thead{
 thead tr{
     color: white;
 }
+em{
+    float: right;
+    color: red;
+}
+
+margintop20{
+    margin-top: 10px;
+}

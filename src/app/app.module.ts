@@ -32,6 +32,8 @@ import { OrderService } from "./orderList/order.service";
 import { EmployeeListService } from "./employeeList/employee.service";
 import { EmployeeListComponent } from "./employeeList/employee.component";
 import { EmployeeListDetailComponent } from "./employeeList/EmployeeListDetailComponent";
+import { AuthService } from "./user/auth.service";
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,8 @@ import { EmployeeListDetailComponent } from "./employeeList/EmployeeListDetailCo
     SupplierComponent,
     OrderListComponent,
     EmployeeListComponent,
-    EmployeeListDetailComponent
+    EmployeeListDetailComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,11 @@ import { EmployeeListDetailComponent } from "./employeeList/EmployeeListDetailCo
     FormsModule,
     HttpModule
   ],
-  providers: [EmployeeService, OrderService,EmployeeListService,
+  providers: [
+    EmployeeService,
+    OrderService,
+    EmployeeListService,
+    AuthService,
     ToasterService,
     ProductService,
     SupplierService],

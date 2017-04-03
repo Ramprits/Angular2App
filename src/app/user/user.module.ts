@@ -14,3 +14,9 @@ import { LoginComponent } from "./login.component";
   declarations: [UserComponent, LoginComponent]
 })
 export class UserModule { }
+export interface IUser {
+  id: number,
+  firstName: string,
+  lastName: string,
+  userName: string
+}
